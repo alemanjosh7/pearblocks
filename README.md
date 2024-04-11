@@ -21,5 +21,5 @@ Pass the following commands:
 ```javascript
 import { pearblocks } from "pearblocks";
 
-console.log(["core-key", "pearblock"]);
+console.log(pearblocks("core-key", "pearblock"));
 ```
