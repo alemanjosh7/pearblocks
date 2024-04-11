@@ -4,7 +4,7 @@ import Corestore from 'corestore'
 import Hyperbee from 'hyperbee'
 import b4a from 'b4a'
 
-async function pearblocks(corekey, word) {
+async function pearblocks (corekey, word) {
   const store = new Corestore(Pear.config.storage)
 
   const swarm = new Hyperswarm()
@@ -64,6 +64,6 @@ async function pearblocks(corekey, word) {
   })
   return await response
 }
-//insert in the first parameter they core key
+// insert in the first parameter they core key
 const beekey = await pearblocks('', 'hyperswarm')
 console.log(beekey)
