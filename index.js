@@ -3,8 +3,8 @@ import Hyperswarm from 'hyperswarm'
 import Corestore from 'corestore'
 import Hyperbee from 'hyperbee'
 import b4a from 'b4a'
-
-async function pearblocks (corekey, word) {
+import process from 'bare-process'
+async function pearblocks(corekey, word) {
   const store = new Corestore(Pear.config.storage)
 
   const swarm = new Hyperswarm()
@@ -62,6 +62,7 @@ async function pearblocks (corekey, word) {
     }
     response = `${word} is: ${node.value}`
   })
+
   return await response
 }
 // insert in the first parameter they core key

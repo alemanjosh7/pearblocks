@@ -1,2 +1,2 @@
 import { pearblocks } from './index'
-console.log(await pearblocks('xd', 'hyperswarm'))
+console.log(await pearblocks('', 'hyperswarm'))
