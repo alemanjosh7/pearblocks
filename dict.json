@@ -1,0 +1,70 @@
+[
+    {
+        "key": "hypercore",
+        "value": "Hypercore is a secure, distributed append-only log built for sharing large datasets and streams of real-time data. It comes with a secure transport protocol, making it easy to build fast and scalable peer-to-peer applications."
+    },
+    {
+        "key": "hyperbee",
+        "value": "Hyperbee is an append only B-tree based on Hypercore. It provides a key/value-store API, with methods for inserting and getting key-value pairs, atomic batch insertions, and creating sorted iterators. It uses a single Hypercore for storage, using a technique called embedded indexing. It provides features like cache warmup extension, efficient diffing, version control, sorted iteration, and sparse downloading."
+    },
+    {
+        "key": "hyperdrive",
+        "value": "Hyperdrive is a secure, real-time distributed file system designed for easy P2P file sharing. We use it extensively inside Holepunch; apps like Keet are distributed to users as Hyperdrives, as is the Holepunch platform itself."
+    },
+    {
+        "key": "autobase",
+        "value": "Autobase is used to automatically rebase multiple causally-linked Hypercores into a single, linearized Hypercore. The output of an Autobase is 'just a Hypercore', which means it can be used to transform higher-level data structures (like Hyperbee) into multiwriter data structures with minimal additional work."
+    },
+    {
+        "key": "hyperdht",
+        "value": "The DHT powering Hyperswarm and built on top of dht-rpc. The HyperDHT uses a series of holepunching techniques to ensure connectivity works on most networks and is mainly used to facilitate finding and connecting to peers using end-to-end encrypted Noise streams. In the HyperDHT, peers are identified by a public key, not by an IP address. A public key can be connected regardless of where the peers are located, even if they move between different networks."
+    },
+    {
+        "key": "hyperswarm",
+        "value": "Hyperswarm helps to find and connect to peers announcing a common 'topic' that can be anything. Using Hyperswarm, discover and connect peers with a shared interest over a distributed network. For example, we often use Hypercore's discovery key as the swarm topic for discovering peers to replicate with."
+    },
+    {
+        "key": "corestore",
+        "value": "Corestore is a Hypercore factory that makes it easier to manage large collections of named Hypercores. It is designed to efficiently store and replicate multiple sets of interlinked Hypercore(s), such as those used by Hyperdrive, removing the responsibility of managing custom storage/replication code from these higher-level modules."
+    },
+    {
+        "key": "localdrive",
+        "value": "A file system API that is similar to Hyperdrive. This tool comes in handy when mirroring files from user filesystem to a drive, and vice-versa."
+    },
+    {
+        "key": "mirrordrive",
+        "value": "Mirrors a Hyperdrive or a LocalDrive into another one."
+    },
+    {
+        "key": "secretstream",
+        "value": "SecretStream is used to securely create connections between two peers in Hyperswarm. It is powered by Noise and libsodium's SecretStream. SecretStream can be used as a standalone module to provide encrypted communication between two parties."
+    },
+    {
+        "key": "compact-encoding",
+        "value": "A series of binary encoders/decoders for building small and fast parsers and serializers."
+    },
+    {
+        "key": "protomux",
+        "value": "Multiplex multiple message-oriented protocols over a stream."
+    },
+    {
+        "key": "hypershell",
+        "value": "A command-line interface for generating and connecting to peer-to-peer, end-to-end encrypted shells."
+    },
+    {
+        "key": "hypertele",
+        "value": "A swiss-knife proxy powered by HyperDHT"
+    },
+    {
+        "key": "hyperbeam",
+        "value": "An end-to-end encrypted pipeline for the Internet, utilizing the Hyperswarm and Noise Protocol for secure communications."
+    },
+    {
+        "key": "hyperssh",
+        "value": "A utility to facilitate SSH operations via the HyperDHT."
+    },
+    {
+        "key": "drives",
+        "value": "CLI to download, seed, and mirror a Hyperdrive or Localdrive."
+    }
+]
