@@ -1,6 +1,6 @@
 {
   "name": "pearblocks",
-  "main": "index.js",
+  "main": "pearblock.js",
   "type": "module",
   "pear": {
     "name": "pearblocks",
@@ -12,19 +12,34 @@
   },
   "scripts": {
     "dev": "pear dev",
-    "test": "brittle test/*.test.js"
+    "test": "bare test/*.test.js"
+  },
+  "bin": {
+    "pearblocks": "./pearblock.js"
   },
   "dependencies": {
     "b4a": "^1.6.6",
     "bare-fs": "^2.2.3",
     "bare-pipe": "^2.0.6",
     "bare-process": "^1.3.2",
+    "commander": "^12.0.0",
     "corestore": "^6.18.1",
     "hyperbee": "^2.19.1",
     "hyperswarm": "^4.7.14",
     "random-access-memory": "^6.2.1"
   },
-  "version": "1.0.0",
+  "peerDependencies": {
+    "b4a": "^1.6.6",
+    "bare-fs": "^2.2.3",
+    "bare-pipe": "^2.0.6",
+    "bare-process": "^1.3.2",
+    "commander": "^12.0.0",
+    "corestore": "^6.18.1",
+    "hyperbee": "^2.19.1",
+    "hyperswarm": "^4.7.14",
+    "random-access-memory": "^6.2.1"
+  },
+  "version": "1.0.3",
   "description": "CLI to have revelant information about pear blocks from Holepunch's Documentation",
   "directories": {
     "test": "test"
