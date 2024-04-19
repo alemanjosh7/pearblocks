@@ -56,7 +56,6 @@ cmd.on('data', lines => {
   }
   else {
     const line = lines.split(" ")
-    console.log(line)
     if (line.length > 1) {
       if (line[1].substring(0, 2) == '--') {
         if (line[1].includes('help')) {
@@ -148,7 +147,7 @@ const ask = async (word, corekey) => {
   const swarm = new Hyperswarm()
   Pear.teardown(() => swarm.destroy())
   swarm.on('connection', conn => store.replicate(conn))
-
+  console.log(`The pearblock you want to know about is: ${word}`)
   const core = store.get({ name: corekey })
 
   const bee = new Hyperbee(core, {

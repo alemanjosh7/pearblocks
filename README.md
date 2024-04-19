@@ -36,6 +36,15 @@ Importing dictionary...
 Dictionary imported!
 ```
 
+In the case that with [key] has already imported the dictionary with that specific Hypercore key then it would output this
+
+```js
+> pearblock init dict
+Your core key is: dict
+Seeding dictionary...
+Dictionary seeded!
+```
+
 ## Request hyperbee key
 
 > pearblock hyperkey
@@ -45,7 +54,7 @@ Dictionary imported!
 
 ```js
 > pearblock ask hypercore
-The Pear Block you want to know about is: hypercore
+The pearblock you want to know about is: hypercore
 Holepunch's Block hypercore is: Hypercore is a secure, distributed append-only log built for sharing large datasets and streams of real-time data. It comes with a secure transport protocol, making it easy to build fast and scalable peer-to-peer applications.
 ```
 
