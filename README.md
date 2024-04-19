@@ -6,16 +6,16 @@ This app it's a CLI dictionary that works in serverless using hyperswarm, corest
 
 ### Start
 
-First of all, to start using this CLI you need to run the next command.
+First of all, to start using this CLI you need to run the following command.
 
 ```js
 pear dev
 ```
 
-After that the cli will start working and you can execute the following commands
+After that the CLI will start working and you can execute the following commands
 
 ```bash
-Usage: pearblocks [command]
+Usage: pearblocks [command] [options]
 
 Commands:
   init <key>               Starts importing Pearblocks Dictionary with a specific Hypercore Key
