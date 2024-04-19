@@ -47,8 +47,10 @@ Dictionary seeded!
 
 ## Request hyperbee key
 
-> pearblock hyperkey
+```js
+> pearblock beekey dict
 > You can connect start asking now with this Hyperbee key: 786ed2df6946c4fe4d24256d15b9428aef88a5206f2eecfaff4cb72245dc1486
+```
 
 ## Asking to the dictionary
 
