@@ -14,7 +14,7 @@ test('is dictionary key and value strings', async function (t) {
 })
 
 test('check if a corestore is not writtable', async function (t) {
-  const store = new Corestore('./reader-storage')
+  const store = new Corestore(Pear.config.storage)
   const core = store.get({ key: b4a.from(process.argv[2].substring(2, process.argv[2].length), 'hex') })
   await core.ready()
   store.close()
@@ -23,7 +23,7 @@ test('check if a corestore is not writtable', async function (t) {
 })
 
 test('does finding peers gives timeout', async function (t) {
-  const store = new Corestore('./reader-storage')
+  const store = new Corestore(Pear.config.storage)
   const core = store.get({ key: b4a.from(process.argv[2].substring(2, process.argv[2].length), 'hex') })
   await core.ready()
   const peers = t.test('find all peers')
@@ -53,9 +53,9 @@ test('basic get with with explicit hex key', async function (t) {
 })
 
 test('storage locking', async function (t) {
-  const store1 = new Corestore('./reader-storage')
+  const store1 = new Corestore(Pear.config.storage)
   store1.ready()
-  const store2 = new Corestore('./reader-storage')
+  const store2 = new Corestore(Pear.config.storage)
   try {
     await store2.ready()
     t.fail('dir should have been locked')
@@ -67,7 +67,7 @@ test('storage locking', async function (t) {
 })
 
 test('session get after closing it', async function (t) {
-  const store = new Corestore('./reader-storage')
+  const store = new Corestore(Pear.config.storage)
 
   const session = store.session()
   await session.close()
