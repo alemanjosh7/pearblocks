@@ -1,6 +1,6 @@
 # Pearblocks.
 
-This app it's a CLI dictionary that works as serverless application using hyperswarm, corestore, hyperbee, b4a, bare-readline and bare-tty, and where you can look for specific information about a Holepunch's blocks or terminology such as Hyperbee, Hyperswarm, etc
+This app is a CLI dictionary that works as serverless application using hyperswarm, corestore, hyperbee, b4a, bare-readline and bare-tty, and where you can look for specific information about a Holepunch's blocks or terminology such as Hyperbee, Hyperswarm, etc
 
 ## Usage
 
@@ -18,9 +18,9 @@ After that the CLI will start working and you can execute the following commands
 Usage: pearblocks [command] [options]
 
 Commands:
-  init <key>               Starts importing Pearblocks Dictionary with a specific Hypercore Key
-  hyperkey <key>           After initializing and importing your project you can obtain your hyperbee key to start asking through it
-  ask <word> <key>         Ask about a specific word in the dictionary with your hyper bee key
+  init <key>               Starts importing or seeding Pearblocks Dictionary with a specific Hypercore Key
+  beekey <key>             With a Hypercore key you can ask what is your Hyperbee Key
+  ask <word> <key>         Ask about a specific word in the dictionary with a specific Hypercore key
 ```
 
 ## Help
