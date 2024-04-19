@@ -8,7 +8,7 @@ This app is a CLI dictionary that works as a serverless application using hypers
 
 First of all, to start using this CLI you need to run the following command.
 
-```js
+```bash
 pear dev
 ```
 
@@ -29,7 +29,7 @@ Use `pearblocks --help` for more information.
 
 ## Import dictionary
 
-```js
+```bash
 > pearblock init dict
 Your core key is: dict
 Importing dictionary...
@@ -38,7 +38,7 @@ Dictionary imported!
 
 In the case that with [key] has already imported the dictionary with that specific Hypercore key then it would output this
 
-```js
+```bash
 > pearblock init dict
 Your core key is: dict
 Seeding dictionary...
@@ -47,14 +47,14 @@ Dictionary seeded!
 
 ## Request hyperbee key
 
-```js
+```bash
 > pearblock beekey dict
 > You can connect start asking now with this Hyperbee key: 786ed2df6946c4fe4d24256d15b9428aef88a5206f2eecfaff4cb72245dc1486
 ```
 
 ## Asking to the dictionary
 
-```js
+```bash
 > pearblock ask hypercore
 The pearblock you want to know about is: hypercore
 Holepunch's Block hypercore is: Hypercore is a secure, distributed append-only log built for sharing large datasets and streams of real-time data. It comes with a secure transport protocol, making it easy to build fast and scalable peer-to-peer applications.
@@ -62,7 +62,7 @@ Holepunch's Block hypercore is: Hypercore is a secure, distributed append-only l
 
 If there is no response the following output would be received
 
-```js
+```bash
 > pearblock ask hypercore
 No dictionary entry for hypercore
 ```
